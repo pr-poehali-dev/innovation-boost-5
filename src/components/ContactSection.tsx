@@ -7,7 +7,7 @@ export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `Новая заявка с сайта:\n\nИмя: ${form.name}\nКомпания: ${form.company}\nСообщение: ${form.message}`;
-    window.open(`https://t.me/autopilot_for_business?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://t.me/Natalya_iv1?text=${encodeURIComponent(text)}`, '_blank');
     setSent(true);
   };
 
