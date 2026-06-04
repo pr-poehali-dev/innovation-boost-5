@@ -43,47 +43,38 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="bg-black py-24">
+    <section className="bg-white py-24">
       <div className="container mx-auto px-8 md:px-16">
         {/* Header */}
-        <div className="mb-16 flex flex-col gap-4 border-b border-white/10 pb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-400">
+        <div className="mb-16 flex flex-col gap-4 border-b border-slate-200 pb-10">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600">
             Услуги
           </p>
-          <h2 className="text-3xl font-light text-white md:text-4xl">
+          <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">
             Чем могу помочь вашему бизнесу
           </h2>
-          <p className="max-w-xl text-base text-white/50">
+          <p className="max-w-xl text-base text-slate-500">
             17 лет практики в цифровизации — теперь в формате точечных консультаций и долгосрочного партнёрства.
           </p>
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 gap-px bg-white/5 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
             <div
               key={service.id}
-              className={`group flex flex-col gap-6 bg-black p-8 transition-colors hover:bg-white/5 ${
-                index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
-              }`}
+              className="group flex flex-col gap-6 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
             >
-              {/* Top row */}
               <div className="flex items-start justify-between gap-4">
                 <span className="text-3xl">{service.emoji}</span>
-                <span className="shrink-0 border border-white/15 px-3 py-1 text-xs text-white/30">
+                <span className="shrink-0 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-600">
                   {service.tag}
                 </span>
               </div>
-
-              {/* Title */}
-              <h3 className="text-lg font-light text-white md:text-xl">{service.title}</h3>
-
-              {/* Description */}
-              <p className="flex-1 text-sm leading-relaxed text-white/50">{service.description}</p>
-
-              {/* Deliverable */}
-              <div className="border-t border-white/10 pt-4">
-                <p className="text-xs text-blue-400/80">{service.deliverable}</p>
+              <h3 className="text-lg font-semibold text-slate-900 md:text-xl">{service.title}</h3>
+              <p className="flex-1 text-sm leading-relaxed text-slate-500">{service.description}</p>
+              <div className="border-t border-slate-100 pt-4">
+                <p className="text-xs font-medium text-blue-600">{service.deliverable}</p>
               </div>
             </div>
           ))}
