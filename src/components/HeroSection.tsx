@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://cdn.poehali.dev/projects/b40c8051-801f-49dd-95a0-b162e6becd87/files/32746f08-3264-48ba-a039-948d87982a83.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-2.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-4.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-5.jpg',
+  'https://cdn.poehali.dev/projects/b40c8051-801f-49dd-95a0-b162e6becd87/files/4977b032-6210-42ee-8a1c-71e8e0e8ee35.jpg',
+  'https://cdn.poehali.dev/projects/b40c8051-801f-49dd-95a0-b162e6becd87/files/6aad34d9-e4bb-458f-a1b8-d252cb30799a.jpg',
+  'https://cdn.poehali.dev/projects/b40c8051-801f-49dd-95a0-b162e6becd87/files/8476b635-8a8a-41d4-a980-cde542ebf9d4.jpg',
+  'https://cdn.poehali.dev/projects/b40c8051-801f-49dd-95a0-b162e6becd87/files/89f20369-760c-4946-b70a-f2c6f3461844.jpg',
 ];
 
 const stats = [
