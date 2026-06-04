@@ -53,7 +53,7 @@ export default function HeroSection() {
             <div className={cn('transform transition-all duration-1000 ease-out', isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0')}>
               <div className="relative h-40 w-40 overflow-hidden rounded-full border-4 border-white/60 shadow-2xl md:h-56 md:w-56">
                 <img
-                  src="https://cdn.poehali.dev/projects/b40c8051-801f-49dd-95a0-b162e6becd87/bucket/ec57611a-f53b-4640-918e-d5fd17aaffed.jpg"
+                  src="https://cdn.poehali.dev/projects/b40c8051-801f-49dd-95a0-b162e6becd87/bucket/b0eb6683-1b74-4e3c-b874-785609c79e2f.jpg"
                   alt="Иванова Наталья — Директор по цифровизации"
                   className="h-full w-full object-cover"
                 />
