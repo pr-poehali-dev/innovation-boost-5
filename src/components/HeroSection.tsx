@@ -81,6 +81,9 @@ export default function HeroSection() {
                 </p>
 
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
+                  Иванова Наталья
+                </p>
+                <p className="text-lg font-light text-white/50 md:text-xl">
                   Директор по цифровизации
                 </p>
                 <p className="text-lg font-light leading-relaxed text-white/70 md:text-xl">
