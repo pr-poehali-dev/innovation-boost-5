@@ -3,17 +3,9 @@ const posts = [
     id: 1,
     format: 'Чек-лист',
     emoji: '✅',
-    title: 'Как снизить IT-затраты на 30% без увольнений и потери качества',
-    teaser: 'Провёл аудит у 4+ компаний — вот 7 пунктов, которые дают результат уже в первый квартал. Без боли и консультантов за миллион.',
+    title: 'Аудит ИТ-затрат',
+    teaser: 'Нахожу 20–30% бюджета, которые можно сократить без потери качества — опираясь на мой опыт реального сокращения на 30%.',
     tags: ['IT-бюджет', 'оптимизация', 'CIO'],
-  },
-  {
-    id: 2,
-    format: 'Антикейс',
-    emoji: '🚨',
-    title: '«Мы автоматизировали склад, но ничего не изменилось» — разбор провала',
-    teaser: 'Реальный случай: компания потратила 8 месяцев и 4 млн рублей на внедрение, а склад работает по-старому. Где была ошибка — и как её не повторить.',
-    tags: ['антикейс', 'автоматизация', 'склад'],
   },
   {
     id: 3,
@@ -72,16 +64,14 @@ export default function ContentSection() {
         </div>
 
         {/* Posts grid */}
-        <div className="grid grid-cols-1 gap-px bg-white/5 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post, index) => (
+        <div className="grid grid-cols-1 gap-px bg-white/5 md:grid-cols-2 lg:grid-cols-4">
+          {posts.map((post) => (
             <a
               key={post.id}
               href="https://t.me/autopilot_for_business"
               target="_blank"
               rel="noopener noreferrer"
-              className={`group flex flex-col gap-5 bg-[#080808] p-8 transition-colors hover:bg-white/5 ${
-                index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
-              }`}
+              className="group flex flex-col gap-5 bg-[#080808] p-8 transition-colors hover:bg-white/5"
             >
               {/* Format badge */}
               <div className="flex items-center justify-between">
